@@ -15,8 +15,11 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.projectlombok:lombok:1.18.26'
     runtimeOnly 'com.mysql:mysql-connector-j'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'org.slf4j:log4j-over-slf4j:1.7.30'
 }
 
 tasks.named('test') {
